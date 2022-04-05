@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="./css/slide-banner.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v10.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div
+      class="fb-customerchat"
+      attribution="install_email"
+      page_id="102443288577424"
+    ></div>
+    <header>
+      <div class="container">
+        <div class="info">
+          <ul>
+            <li>
+              <a href="#"> <i class="fa fa-phone"> </i> (+84) 869 189 743 </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-envelope"></i> duydhps15446@fpt.edu.vn
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-networld">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="fixHeader">
+      <div class="cover">
+        <div class="basic">
+          <div>
+            <div class="logo">
+              <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="change">
+            <div class="language">
+              <div class="dropdown">
+                <button class="dropbtn">USA</button>
+                <div class="dropdown-content">
+                  <a href="#">USA</a>
+                  <a href="#">VIE</a>
+                </div>
+              </div>
+            </div>
+            <div class="money">
+              <div class="dropdown">
+                <button class="dropbtn">DOLLAR</button>
+                <div class="dropdown-content">
+                  <a href="#">DOLLAR</a>
+                  <a href="#">VND</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./404.html"><i class="fa fa-user"></i>Account</a>
+            </li>
+            <li>
+              <a href="./404.html"><i class="fa fa-star"></i>Wishlist</a>
+            </li>
+            <li>
+              <a href="./404.html"><i class="fa fa-crosshairs"></i>Checkout</a>
+            </li>
+            <li>
+              <a href="./cart.html"><i class="fa fa-shopping-cart"></i>Cart</a>
+            </li>
+            <li>
+              <a href="./login.html"><i class="fa fa-lock"></i>Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navigation">
+        <div class="menu-item">
+          <button class="menu-btn active">Home</button>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">
+            Shop <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="menu-drop-content">
+            <a href="./index.html">Products</a>
+            <a href="./detail.html">Product Details</a>
+            <a href="./404.html">Checkout</a>
+            <a href="./cart.html">Cart</a>
+            <a href="./login.html">Login</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">
+            Blog <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="menu-drop-content">
+            <a href="./404.html">Blog List </a>
+            <a href="./404.html">Blog Single</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">
+            <a href="./contact.html"> Contact</a>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="container-search">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="slide">
+        <div class="slide-images" id="slide-images">
+          <img
+            src="./images/slide-banner/slide-pic11.jpg"
+            id="lastClone"
+            alt=""
+          />
+          <img src="./images/slide-banner/slide-pic5.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic6.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic7.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic8.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic9.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic10.jpg" alt="" />
+          <img src="./images/slide-banner/slide-pic11.jpg" alt="" />
+          <img
+            src="./images/slide-banner/slide-pic5.jpg"
+            id="firstClone"
+            alt=""
+          />
+        </div>
+        <i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+        <i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+        <div class="circle-bubble">
+          <div class="circle" data-count="1"></div>
+          <div class="circle" data-count="2"></div>
+          <div class="circle" data-count="3"></div>
+          <div class="circle" data-count="4"></div>
+          <div class="circle" data-count="5"></div>
+          <div class="circle" data-count="6"></div>
+          <div class="circle" data-count="7"></div>
+        </div>
+      </div>
+      <aside>
+        <div class="categories">
+          <div class="cat-title">
+            <div></div>
+            <h3>CATEGORY</h3>
+            <div></div>
+          </div>
+          <div class="cat-content">
+            <div><a href="">ACCESSORIES & SUPPLIES</a></div>
+            <div><a href="">CAMERA & PHOTO</a></div>
+            <div><a href="">CAR & VEHICLE ELECTRONICS</a></div>
+            <div><a href="">COMPUTERS & ACCESSORIES</a></div>
+            <div><a href="">HEADPHONES</a></div>
+            <div><a href="">HOME AUDIO</a></div>
+            <div><a href="">PORTABLE AUDIO & VIDEO</a></div>
+            <div><a href="">TV & VIDEO</a></div>
+          </div>
+        </div>
+        <div class="ads" title="Let's protect the environment"></div>
+      </aside>
+      <article>
+        <div class="showMessage">Đã thêm vào giỏ hàng!</div>
+        <div class="cat-title">
+          <div></div>
+          <h3>FEATURES ITEMS</h3>
+          <div></div>
+        </div>
+        <div class="mr10 mb10 card">
+          <div class="imgBx">
+            <img src="./images/h2.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>OontZ Angle 3 (3rd Gen) Bluetooth Portable Speaker</h3>
+            <h2 class="price">$599.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mr10 mb10 card">
+          <div class="imgBx">
+            <img src="./images/h3.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>Sony WH-1000XM4 Wireless</h3>
+            <h2 class="price">$49.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mb10 card">
+          <div class="imgBx">
+            <img src="./images/h4.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>Samsung Galaxy Buds Pro</h3>
+            <h2 class="price">$499.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mr10 mb10 card">
+          <div class="imgBx">
+            <img src="./images/h1.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>WeatherTech CupFone Universal Cup Holder for Car Phone</h3>
+            <h2 class="price">$699.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mr10 mb10 card">
+          <div class="imgBx">
+            <img src="./images/h6.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>Samsung Galaxy Watch Active 2</h3>
+            <h2 class="price">$299.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mb10 card">
+          <div class="imgBx">
+            <img src="./images/h8.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>Acer Predator Helios 300 Gaming Laptop</h3>
+            <h2 class="price">$1099.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mb10 card">
+          <div class="imgBx">
+            <img src="./images/h11.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>HP 24mh FHD Monitor - Computer Monitor</h3>
+            <h2 class="price">$809.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mb10 card">
+          <div class="imgBx">
+            <img src="./images/h12.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>Seagate Portable 2TB External Hard Drive Portable HDD</h3>
+            <h2 class="price">$119.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+        <div class="mb10 card">
+          <div class="imgBx">
+            <img src="./images/h13.png" alt="" />
+          </div>
+          <div class="contenBx">
+            <h3>IMDEN Bluetooth 5.0 FM Transmitter for Car</h3>
+            <h2 class="price">$99.<small>99</small></h2>
+            <a  class="buy">Buy now</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>
+            <div>
+              <h2>SERVICE</h2>
+              <ul>
+                <li><a href="">Online Help</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Change Location</a></li>
+                <li><a href="">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>QUICK SHOP</h2>
+              <ul>
+                <li><a href="">Accessories & Supplies</a></li>
+                <li><a href="">Camera & Photo</a></li>
+                <li><a href="">Car & Vehicle Electronics</a></li>
+                <li><a href="">Computers & Accessories</a></li>
+                <li><a href="">TV & Video</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>POLICIES</h2>
+              <ul>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privecy Policy</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Billing System</a></li>
+                <li><a href="">Ticket System</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>ABOUT SHOPPER</h2>
+              <ul>
+                <li><a href="">Company Information</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Store Location</a></li>
+                <li><a href="">Affillate Program</a></li>
+                <li><a href="">Copyright</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="add-email">
+            <div>
+              <h2>FOR MORE INFO</h2>
+              <form action="">
+                <input type="text" placeholder="Your email address" />
+                <button type="Submit">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
+                <p>
+                  Get the most recent updates from our site and be updated your
+                  self...
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="./js/cart.js"></script>
+    <script src="./js/addToCart.js"></script>
+    <script src="./js/fixedNav.js"></script>
+    <script src="./js/slide-show-banner.js"></script>
+  </body>
+</html>

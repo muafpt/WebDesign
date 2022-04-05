@@ -1,0 +1,342 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #264653 ;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #48bfe3;
+
+}
+.container{
+    margin-left: 10%;
+    z-index: 1;
+    width:70%;
+    height: 70vh;
+    background-color: #fff;
+    position: relative;
+}
+.send-message{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    top:0;
+    left: 25%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+h2{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.send-message form{
+    width: 90%;
+    height: 80%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    flex-direction: column;
+}
+form .name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+form .name .first-name{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+form .name .first-name input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 16px;  
+    padding-top:20px;
+    outline: none;
+}
+form .name .first-name label{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+form .name .first-name label span{
+    position: absolute;
+    transform: translateY(24px);
+    transition: all 0.3s ease;
+}
+form .name .first-name label::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content:'';
+    bottom:-1px;
+    left: 0;
+    border-bottom: 3px solid #48bfe3;
+    transform: translateX(-100%);
+    transition:all 0.3s ease;
+}
+form .name .first-name input:focus + .lable-first-name .content-first-name,
+form .name .first-name input:valid + .lable-first-name .content-first-name
+{
+    transform: translateY(0);
+    font-size:14px;
+    color:#48bfe3;
+}
+form .name .first-name input:focus + .lable-first-name::after,
+form .name .first-name input:valid + .lable-first-name::after{
+    transform: translateX(0);
+}
+
+
+form .name .first-name input[type='email']:focus + .lable-first-name .content-first-name,
+form .name .first-name input[type='email']:valid + .lable-first-name .content-first-name
+{
+    transform: translateY(0);
+    font-size:14px;
+    color:#48bfe3;
+}
+form .name .first-name input[type='email']:focus + .lable-first-name::after,
+form .name .first-name input[type='email']:valid + .lable-first-name::after
+{
+    transform: translateX(0);
+}
+
+form .name .last-name{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+form .name .last-name input{
+    width: 100%;
+    height: 100%;
+    border:none;
+    font-size: 16px;
+    padding-top:20px;
+    outline: none;
+}
+form .name .last-name .lable-last-name{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    border-bottom: 1px solid black;
+    pointer-events: none;
+}
+form .name .last-name .lable-last-name .content-last-name{
+    position: absolute;
+    transform: translateY(24px);
+    transition:all 0.3s ease;
+}
+form .name .last-name .lable-last-name::after{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: 100%;
+    bottom:-1px;
+    left: 0;
+    border-bottom: 3px solid #48bfe3;
+    transform: translateX(-100%);
+    transition:all 0.3s ease;
+}
+form .name .last-name input:focus +.lable-last-name .content-last-name,
+form .name .last-name input:valid +.lable-last-name .content-last-name{
+    transform: translateY(0);
+    font-size: 14px;
+    color:#48bfe3;
+}
+form .name .last-name input:focus +.lable-last-name::after,
+form .name .last-name input:valid +.lable-last-name::after{
+    transform: translateX(0);
+}
+
+
+
+
+.message{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.message textarea{
+    
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto',sans-serif;
+    padding-top: -100px;
+    border: none;
+    resize: none;
+    outline:none;
+    font-size: 16px;
+    padding-top:40px;
+}
+.message label{
+    
+    position: absolute;
+    padding-top:40px;
+    width: 100%;
+    height: 100%;
+    bottom:0;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
+.message label::after{
+    content: '';
+    position: absolute;
+    bottom:-1px;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #48bfe3;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.message label span{
+    position: absolute;
+    font-size:16px;
+    transition: all 0.3s ease;
+}
+.message textarea:focus + label span,
+.message textarea:valid + label span{
+    transform: translateY(-30px);
+    color: #48bfe3;
+    font-size:14px;
+}
+.message textarea:focus + label::after,
+.message textarea:valid + label::after{
+    transform: translateX(0);
+}
+.sendBtn{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sendBtn button{
+    width: 100%;
+    height: 100%;
+    background-color: #001233;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.sendBtn button:hover{
+    background-color:#fff;
+    color:#001233;
+    box-shadow: 0 0 3px #001233;
+}
+
+
+
+
+.contact-info{
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top:10%;
+    left: -15%;
+    background-color:#001233 ;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.contact-info h2{
+    color:#fff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    height: 10%;
+}
+.contact-info .info{
+    width: 100%;
+    height: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.contact-info .info .position{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    
+}
+.contact-info .info .position i{
+  margin-right: 10px;
+  margin-top: 3px;
+  font-size: 30px;
+  color:#bbb;
+}
+.contact-info .info .position span{
+    color:#bbb;
+    font-size:14px;
+}
+
+.email-info span{
+    margin-top: 6px;
+}
+
+
+.contact-info .social-icon{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon i{
+    color:#bbb;
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+.social-icon i:hover{
+    color:yellow;
+    text-shadow: 0 0 5px #fff;
+}
+
+
+
+.messageError{
+    position: absolute;
+    top:0;
+    right: 0;
+    font-size: 12px;
+    color:crimson;
+}

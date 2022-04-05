@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="info">
+          <ul>
+            <li>
+              <a href="#"> <i class="fa fa-phone"> </i> (+84) 869 189 743 </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-envelope"></i> duydhps15446@fpt.edu.vn
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-networld">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-dribbble"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-google-plus"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="fixHeader">
+      <div class="cover">
+        <div class="basic">
+          <div>
+            <div class="logo">
+              <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="change">
+            <div class="language">
+              <div class="dropdown">
+                <button class="dropbtn">USA</button>
+                <div class="dropdown-content">
+                  <a href="#">USA</a>
+                  <a href="#">VIE</a>
+                </div>
+              </div>
+            </div>
+            <div class="money">
+              <div class="dropdown">
+                <button class="dropbtn">DOLLAR</button>
+                <div class="dropdown-content">
+                  <a href="#">DOLLAR</a>
+                  <a href="#">VND</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./404.html"><i class="fa fa-user"></i>Account</a>
+            </li>
+            <li>
+              <a href="./404.html"><i class="fa fa-star"></i>Wishlist</a>
+            </li>
+            <li>
+              <a href="./404.html"><i class="fa fa-crosshairs"></i>Checkout</a>
+            </li>
+            <li>
+              <a href="./cart.html"><i class="fa fa-shopping-cart"></i>Cart</a>
+            </li>
+            <li>
+              <a href="./login.html"><i class="fa fa-lock"></i>Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navigation">
+        <div class="menu-item">
+          <button class="menu-btn active"><a href="./index.html">Home</a> </button>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">
+            Shop <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="menu-drop-content">
+            <a href="./index.html">Products</a>
+            <a href="./detail.html">Product Details</a>
+            <a href="./404.html">Checkout</a>
+            <a href="./cart.html">Cart</a>
+            <a href="./login.html">Login</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">
+            Blog <i class="fa fa-angle-down"></i>
+          </button>
+          <div class="menu-drop-content">
+            <a href="./404.html">Blog List </a>
+            <a href="./404.html">Blog Single</a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn"> <a href="./contact.html"> Contact</a></button>
+        </div>
+      </nav>
+    </div>
+    <div class="container-search">
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="cart-container">
+        <table id='talbe-cart'>
+          <thead>
+            <tr class="item-menu">
+              <td class="item-img">Item</td>
+              <td class="item-description"></td>
+              <td class="item-price">Price</td>
+              <td class="item-quantity">Quantity</td>
+              <td class="item-total">Total</td>
+              <td class="item-delete"></td>
+            </tr>
+          </thead>
+          <!-- <tbody>
+            <tr class="item-content">
+              <td class="item-img">
+                <a href="./detail.html"><img src="./images/h3.png" alt="" /></a>
+              </td>
+              <td class="item-description">
+                <h4><a href="./detail.html">SONY WH-1000XM4 WIRELESS</a></h4>
+                <p>Web ID: 1089772</p>
+              </td>
+              <td class="item-price"><p>$49.99</p></td>
+              <td class="item-quantity">
+                <a href="" class="item-add"><i class="fa fa-plus"></i></a>
+                <input type="text" value="1" readonly />
+                <a href="" class="item-minus"><i class="fa fa-minus"></i></a>
+              </td>
+              <td class="item-total"><p>$49.49</p></td>
+              <td class="item-delete">
+                <a href="">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="item-content">
+              <td class="item-img">
+                <a href="./detail.html"><img src="./images/h4.png" alt="" /></a>
+              </td>
+              <td class="item-description">
+                <h4><a href="./detail.html">SAMSUNG GALAXY BUDS PRO</a></h4>
+                <p>Web ID: 10763572</p>
+              </td>
+              <td class="item-price"><p>$499.99</p></td>
+              <td class="item-quantity">
+                <a href="" class="item-add"><i class="fa fa-plus"></i></a>
+                <input type="text" value="1" readonly/>
+                <a href="" class="item-minus"><i class="fa fa-minus"></i></a>
+              </td>
+              <td class="item-total"><p>$499.99</p></td>
+              <td class="item-delete">
+                <a href="">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr class="item-content">
+              <td class="item-img">
+                <a href="./detail.html"><img src="./images/h6.png" alt="" /></a>
+              </td>
+              <td class="item-description">
+                <h4>
+                  <a href="./detail.html">SAMSUNG GALAXY WATCH ACTIVE 2</a>
+                </h4>
+                <p>Web ID: 3459772</p>
+              </td>
+              <td class="item-price"><p>$299.99</p></td>
+              <td class="item-quantity">
+                <a href="" class="item-add"><i class="fa fa-plus"></i></a>
+                <input type="text" value="1"readonly />
+                <a href="" class="item-minus"><i class="fa fa-minus"></i></a>
+              </td>
+              <td class="item-total"><p>$299.99</p></td>
+              <td class="item-delete">
+                <a href="">
+                  <i class="fa fa-times"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody> -->
+        </table>
+        <div class="paid">
+          <div>
+            <h2>
+              What would you like to do next?
+            </h2>
+            <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+          </div>
+          <div>
+            <div class="method">
+              <form action="#">
+                <div class="checkbox-container">
+                  <div>
+                    <input type="checkbox" name='coupon' checked='true'>
+                    <label for="coupon">Use Coupon Code</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name='voucher'>
+                    <label for="voucher">Use Gift Voucher</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" name='estimate'>
+                    <label for="estimate">Estimate Shipping & Taxes</label>
+                  </div>
+                </div>
+                <div class="select-container">
+                  <div>
+                    
+                    <label for="country">Country:</label>
+                    <select name="country" >
+                      <option value="">USA</option>
+                      <option value="">Viet Nam</option>
+                      <option value="">France</option>
+                      <option value="">Japan</option>
+                      <option value="">Korea</option>
+                    </select>
+                  </div>
+                  <div>
+                    
+                    <label for="region">Region / State:</label>
+                    <select name="region">
+                      <option value="">Select</option>
+                      <option value="">USA</option>
+                      <option value="">Viet Nam</option>
+                      <option value="">France</option>
+                      <option value="">Japan</option>
+                      <option value="">Korea</option>
+                    </select>
+                  </div>
+                  <div class="nice-input">
+                    
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="text" name="zipcode" placeholder="Zip code">
+                  </div>
+                </div>
+                <div class="button-container">
+                  <button>Get quotes</button>
+                  <button>Continue</button>
+                </div>
+                </div>
+              </form>
+            </div>
+            <div class="total">
+              <div class="total-cost">
+                <ul>
+                  <li>
+                    <span>Cart Sub Total</span>
+                    <span>$849.47</span>
+                  </li>
+                  <li>
+                    <span>Eco Tax</span>
+                    <span>$2</span>
+                  </li>
+                  <li>
+                    <span>Shipping Cost</span>
+                    <span>Free</span>
+                  </li>
+                  <li>
+                    <span>Total</span>
+                    <span id='totalWithEcoTax'>$851.47</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="button-container">
+                <button>Update</button>
+                <button>Check out</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div>
+            <div>
+              <h2>SERVICE</h2>
+              <ul>
+                <li><a href="">Online Help</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Change Location</a></li>
+                <li><a href="">FAQ’s</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>QUICK SHOP</h2>
+              <ul>
+                <li><a href="">Accessories & Supplies</a></li>
+                <li><a href="">Camera & Photo</a></li>
+                <li><a href="">Car & Vehicle Electronics</a></li>
+                <li><a href="">Computers & Accessories</a></li>
+                <li><a href="">TV & Video</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>POLICIES</h2>
+              <ul>
+                <li><a href="">Terms of Use</a></li>
+                <li><a href="">Privecy Policy</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Billing System</a></li>
+                <li><a href="">Ticket System</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>ABOUT SHOPPER</h2>
+              <ul>
+                <li><a href="">Company Information</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Store Location</a></li>
+                <li><a href="">Affillate Program</a></li>
+                <li><a href="">Copyright</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="add-email">
+            <div>
+              <h2>FOR MORE INFO</h2>
+              <form action="">
+                <input type="text" placeholder="Your email address" />
+                <button type="Submit">
+                  <i class="fa fa-arrow-circle-o-right"></i>
+                </button>
+                <p>
+                  Get the most recent updates from our site and be updated your
+                  self...
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/cart.js"></script>
+    <script src="./js/fixedNav.js"></script>
+    <script src="./js/addAndMinus.js"></script>
+  </body>
+</html>
