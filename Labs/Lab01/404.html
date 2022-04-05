@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/404.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2>404</h2>
+            <p class="opps">Opps! Page not found</p>
+            <p class="text">The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
+            <a href="./index.html">Back To Home</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const container = document.querySelector(".container");
+        window.addEventListener("mousemove",function(e){
+            let x = e.clientX/5;
+            let y = e.clientY/5;
+
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+        })
+    
+    </script>
+</body>
+</html>

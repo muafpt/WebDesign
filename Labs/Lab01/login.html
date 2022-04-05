@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="img">
+      <img src="./images/login/wave.png" />
+      <img class="man" src="./images/login/man.svg" />
+    </div>
+    <div class="login-container">
+      <form action="" id='form-login-1'>
+        <div class="avatar">
+          <img src="./images/login/avatar.svg" />
+        </div>
+        <h2>Welcome</h2>
+        <div class="form-group">
+          <input
+            type="text"
+            class="input-control"
+            name="username"
+            required
+            autocomplete="off"
+            id='username'
+          />
+
+          <label for="username" class="label-control"
+            ><span class="label-content">Username</span>
+          </label>
+       
+          <i class="fa fa-user"></i>
+
+          <span class="showError"></span>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="input-control"
+            name="password"
+            required
+            autocomplete="off"
+            id='password'
+          />
+
+          <label for="password" class="label-control"
+            ><span class="label-content">Password</span>
+          </label>
+          <i class="fa fa-lock"></i>
+          <span class="showError"></span>
+        </div>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <a href="./sign-up.html" class="sign-up">Haven't had a account yet!</a>
+        <input type="submit" class="login-btn" value="Login" />
+      </form>
+    </div>
+
+
+    <script src="./js/validator.js"></script>
+    <script >
+      Validator({
+        form: '#form-login-1',
+        messageElement: '.showError',
+        rules: [
+          Validator.isRequired('#username'),
+          Validator.isRequired('#password')
+        ]
+      })
+
+    </script>
+  </body>
+</html>

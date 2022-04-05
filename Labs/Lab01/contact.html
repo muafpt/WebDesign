@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css" integrity="sha512-dBL5cY4qTt42J1cfabCHTYR7KMztyd+n4t2GhD6EH/MKWJIIHuEYckJ1nHEpTwIaiDkrjzbc6WyiSkdLP+3INQ==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="container">
+        <div class="send-message">
+            <form action="" id = 'form-contact-1'>
+                <h2>Send a Message</h2>
+               
+                <div class="name">
+                    <div class="first-name">
+                        <input type="text" name ='first-name' required autocomplete="off" id ='firstname'>
+                        <label for="firt-name" class="lable-first-name"> <span class="content-first-name">First name</span> </label>
+                        <span class="messageError"></span>
+    
+                    </div>
+                    <div class="last-name">
+                        <input type="text" name ='last-name' required autocomplete="off" id ='lastname'>
+                        <label for="last-name" class="lable-last-name"><span class="content-last-name">Last name</span></label>
+                        <span class="messageError"></span>
+                    </div>
+                </div>
+                <div class="name">
+                    <div class="first-name">
+                        <input type="text" name ='email' required autocomplete="off" id='email'>
+                        <label for="email" class="lable-first-name"> <span class="content-first-name">Email address</span> </label>
+                        <span class="messageError"></span>
+    
+                    </div>
+                    <div class="last-name">
+                        <input type="text" name ='last-name' required autocomplete="off" id='phonenumber'>
+                        <label for="last-name" class="lable-last-name"><span class="content-last-name">Mobile number</span></label>
+                        <span class="messageError"></span>
+                    </div>
+                </div>
+                
+                <div class="message">
+                    <textarea name="message" required autocomplete="off" id ='textarea'></textarea>
+                    <label for="message"> <span> Write your message here...</span></label>
+                    <span class="messageError"></span>
+                </div>
+                <div class="sendBtn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <div class="info">
+                <div class="position">
+                    <i class="fa fa-map" aria-hidden="true"></i><span>31 Cống Lỡ, Phường 15, Quận Tân Bình, Tp.HCM</span>
+                </div>
+                <div class="email-info position">
+                    <i class="fa fa-envelope" aria-hidden="true"></i><span>duydhps15446@fpt.edu.vn</span>
+                </div>
+                <div class="phone-info position email-info">
+                    <i class="fa fa-phone" aria-hidden="true"></i><span>0-869-189-734</span>
+                </div>
+            </div>
+            <div class="social-icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <script src="./js/validator.js"></script>
+    <script>
+        Validator({
+            form: '#form-contact-1',
+            messageElement: '.messageError',
+            rules: [
+                Validator.isRequired('#firstname'),
+                Validator.isRequired('#lastname'),
+                Validator.isEmail('#email'),
+                Validator.checkPhone('#phonenumber'),
+                Validator.isRequired('#textarea')
+            ]
+        })
+
+    </script>
+</body>
+</html>
