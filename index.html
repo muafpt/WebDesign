@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="mycode.js"></script> 
+</head>
+
+<body>
+    <header>
+        <img src="images/2017-FE-01-Min.png" />
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Chương trình</a>
+            <a href="#">Sinh viên</a>
+
+        </nav>
+    </header>
+    <div class="main_content">
+        <section class="left">
+            <ul>
+                <li>Sứ mệnh</li>
+                <li>Triết lý giáo dục</li>
+                <li>Văn hóa</li>
+            </ul>
+    
+        </section>
+        <section class="right">
+            <ul>
+                <li>Sứ mệnh của Trường Đại học FPT<br/>“Cung cấp năng lực cạnh tranh toàn cầu cho đông đảo người học, góp phần mở mang bờ cõi trí tuệ đất nước.” </li>
+                <li>Tầm nhìn của Trường Đại học FPT<br/>Tầm nhìn được thể hiện trong từ khoá iGSM – [Industry Relevant – Global – Smart Education – Mega]. Trở thành một hệ thống giáo dục Mega mang tính quốc tế, đáp ứng nhu cầu xã hội và dựa trên các công nghệ
+                    đào tạo tiên tiến nhất </li>
+                <li>Triết lí giáo dục của Trường Đại học FPT<br/>Giáo dục đào tạo là tổ chức và quản trị việc tự học của người học.</li>
+                <li>Văn hóa của Trường Đại học FPT<br/>
+                    <ul>
+                        <li>Tôn đổi đồng chí gương sáng </li>
+                        <li>Học thật, thi thật, thành công thật </li>
+                        <li>Làm khác để làm tốt</li>
+                    </ul>
+                </li>
+            </ul>
+                <p>
+                    <!-- you must code at here to add the form -->
+                    <div class="TuVan">
+                        <span>Tư vấn tuyển sinh</span>
+                        <div class="ten_email">
+                            <input type="text" placeholder="Nhập tên của bạn" id="name"><br>
+                            <input type="text" placeholder="Nhập email của bạn" id="email"><br>
+                        </div>
+                        <p>Năm tốt nghiệp:</p>
+                        <select class="namTotNghiep" name="" id="">
+                            <option value=""></option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="khac">Năm khác</option>
+                        </select><br>
+                        <div class="diem">
+                            <label for="">Điểm Toán:
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value="5-7">5-7</option>
+                                    <option value="8-10"> 8-10</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="diem">
+                            <label for="">Điểm Lý:
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value="5-7">5-7</option>
+                                    <option value="8-10"> 8-10</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="diem">
+                            <label for="">Điểm Ngoại ngữ:
+                                <select name="" id="">
+                                    <option value=""></option>
+                                    <option value="5-7">5-7</option>
+                                    <option value="8-10"> 8-10</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="skill">
+                            <label for="">Kỹ năng:
+                                <input value="Tư duy logic tốt" type="checkbox" name="" id="skills">Tư duy logic tốt
+                                <input type="checkbox" name="" id="skills" value="Có khiếu thẩm mỹ">Có khiếu thẩm mỹ
+                                <input type="checkbox" name="" id="skills" value="Nhạy bén, nắm bắt tốt các cơ hội">Nhạy bén, nắm bắt tốt các cơ hội
+                            </label><br>
+                        </div>
+                        <button onclick="submit()">Tư vấn</button>
+                        <div id="showInfo">
+                        </div>
+                    </div>
+                </p>
+        </section>
+    </div>
+    <footer>
+        <p>FPT Education<br/>
+            <br/>Hoa Lac High Tech Park, Hanoi, Vietnam
+            <br/>Email: fpteducation@fe.edu.vn </p>
+    </footer>
+</body>
